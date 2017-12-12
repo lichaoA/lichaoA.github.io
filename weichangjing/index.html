@@ -42,17 +42,17 @@
         </div>
         <div class="swiper-slide">
             <div class="s2">
-                <h2>领导致辞<small>LEADER SPEECH</small>
+                <h2 class="ani" swiper-animate-effect="pulse" swiper-animate-duration="2s" swiper-animate-delay="0.3">领导致辞<small>LEADER SPEECH</small>
                 </h2>
                 <div class="main">
                     <img src="img/12.png" alt="">
                     <div class="text">
-                        <p>亲爱的同学们，大家晚上好</p>
-                        <p>
+                        <p class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">亲爱的同学们，大家晚上好</p>
+                        <p class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
                             我们成立于2009年，现在有员1300多人， 我们专注于移动互联网与信息互动社区领域 ，坚持“技术领先，理念领先，管理领先” 的发展战略，2015完成公司整体改制，变 更为股份有限公司。倾力打造具有自主知识 产权的高端移动分发平台致力于帮助移动互
                             联网用户过移动设备中享受开放，便捷的互 联网服务。
                         </p>
-                        <p>
+                        <p class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.2s" swiper-animate-delay="1.2s">
                             我们秉着“真诚，团结，主动，责任”的企
                             业文化，立志深耕移动互联网，打造研发和
                             运营一体的产业链，成为移动互联网行业值
@@ -60,7 +60,7 @@
                         </p>
                     </div>
 
-                    <p class="main-footer">某某企业</p>
+                    <p class="main-footer ani" swiper-animate-effect="flipInX" swiper-animate-duration="1.5s" swiper-animate-delay="2s">某某企业</p>
                 </div>
                 <div class="footer">
                     <p>
@@ -80,7 +80,12 @@
     <div class="swiper-button-next"></div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
-
+    <div>
+        <audio id="mp3" src="mp3/0000011.mp3" autoplay loop></audio>
+    </div>
+    <div id="mp3btn" onclick="music()">
+        <img src="img/musicIcon.png" alt="">
+    </div>
 </div>
 
 <!-- Swiper JS -->
