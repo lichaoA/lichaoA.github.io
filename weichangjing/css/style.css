@@ -8,7 +8,12 @@ html, body {
     position: relative;
     height: 100%;
 }
-
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
 body {
     background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -17,7 +22,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+ul{
+    list-style: none;
+}
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -465,9 +472,174 @@ body {
     left: 10%
 }
 
-.s4 .first .one .btn1{
-    width: 9px;
-    height: 9px;
+.s4 .main .text .first .one .btn1{
+    width: 12px;
+    height: 12px;
     background: #30faae;
     border-radius:50%;
+    border:2px #088682 solid;
+    margin-left: 20px;
+    margin-top: 7px;
 }
+.s4 .main .text .first .two{
+    color: #25fbb3;
+    margin-left: 15px;
+}
+.s4 .main .text .first .three .btn2{
+    width: 12px;
+    height: 12px;
+    background: #00bcf8;
+    border-radius:50%;
+    border:2px #234f72 solid;
+    margin-left: 50px;
+    margin-top: 7px;
+}
+.s4 .main .text .first .four{
+    color: #03b7f4;
+    margin-left: 15px;
+}
+.s4 .main .text .first ul li{
+    float: left;
+    text-align: center;
+}
+.s4 .main .text img{
+    width: 14px;
+    height: 14px;
+}
+.s4 .main .text .senced .btn1{
+    width: 227px;
+    height: 15px;
+    background: -webkit-linear-gradient(right, rgba(6, 235, 202, 0.63)  , #29e0a1); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(6, 235, 202, 0.63) , #29e0a1); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(6, 235, 202, 0.63) , #29e0a1); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(6, 235, 202, 0.63)  , #29e0a1); /* 标准的语法 */
+}
+.s4 .main .text .senced .btn2{
+    width: 130px;
+    height: 15px;
+    background: -webkit-linear-gradient(right, rgba(1, 185, 237, 0.39)  , #00bffe); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(1, 185, 237, 0.39) , #00bffe); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(1, 185, 237, 0.39) , #00bffe); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(1, 185, 237, 0.39)  , #00bffe); /* 标准的语法 */
+}
+.s4 .main .text .thired .btn1{
+    width: 217px;
+    height: 15px;
+    background: -webkit-linear-gradient(right, rgba(6, 235, 202, 0.63)  , #29e0a1); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(6, 235, 202, 0.63) , #29e0a1); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(6, 235, 202, 0.63) , #29e0a1); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(6, 235, 202, 0.63)  , #29e0a1); /* 标准的语法 */
+}
+.s4 .main .text .thired .btn2{
+    width: 120px;
+    height: 15px;
+    background: -webkit-linear-gradient(right, rgba(1, 185, 237, 0.39)  , #00bffe); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(1, 185, 237, 0.39) , #00bffe); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(1, 185, 237, 0.39) , #00bffe); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(1, 185, 237, 0.39)  , #00bffe); /* 标准的语法 */
+}
+.s4 .main .text .forth .btn1{
+    width: 210px;
+    height: 15px;
+    background: -webkit-linear-gradient(right, rgba(6, 235, 202, 0.63)  , #29e0a1); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(6, 235, 202, 0.63) , #29e0a1); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(6, 235, 202, 0.63) , #29e0a1); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(6, 235, 202, 0.63)  , #29e0a1); /* 标准的语法 */
+}
+.s4 .main .text .forth .btn2{
+    width: 100px;
+    height: 15px;
+    background: -webkit-linear-gradient(right, rgba(1, 185, 237, 0.39)  , #00bffe); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(1, 185, 237, 0.39) , #00bffe); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(1, 185, 237, 0.39) , #00bffe); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(1, 185, 237, 0.39)  , #00bffe); /* 标准的语法 */
+}
+.s4 .main .text h3{
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.s4 .main .text span{
+    font-size: 12px;
+    padding-left: 5px;
+}
+.s4 .main .text div,span{
+    float: left;
+}
+.s4 .main .text p{
+    padding-top: 10px;
+}
+.s4 .main .text .fifth p{
+    font-size: 12px;
+}
+.s4 .footer {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+}
+.s4 .footer p img {
+    position: absolute;
+    height: 70px;
+}
+
+.s4 .footer p img:nth-of-type(1) {
+    left: 0px
+}
+
+.s4 .footer p img:nth-of-type(2) {
+    left: -39px
+}
+
+
+/**s5样式**/
+
+.s5 {
+    color: #06ebca
+}
+
+.s5 h2 {
+    padding-top: 30px;
+    margin-bottom: 25px;
+    animation: pulse infinite;
+}
+
+.s4 h2 ::before {
+    background: url("../img/14.png");
+    background-size: cover;
+    width: 80px;
+    height: 18px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    content: ""
+}
+
+.s5 h2 ::after {
+    background: url("../img/13.png");
+    background-size: cover;
+    width: 80px;
+    height: 18px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    content: ""
+}
+
+.s5 h2 small {
+    margin-top: 10px;
+    font-size: 14px;
+    display: block;
+    letter-spacing: 5px
+}
+.s5 .main .picture{
+    width: 40%;
+    float: left;
+}
+
+
+/**s6样式**/
+
+
+/**s7样式**/
+
