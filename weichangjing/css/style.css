@@ -651,7 +651,9 @@ ul{
     bottom: 140px;
     right: 30px;
 }
-
+.s5 .main .text .ani{
+    animation: pulse infinite;
+}
 /**s6样式**/
 
 
