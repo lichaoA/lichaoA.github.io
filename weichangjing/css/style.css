@@ -64,20 +64,75 @@ ul{
 
 .swiper-button-next {
     position: absolute;
+    width: 20px;
+    height: 25px;
+    background-size: 20px 25px;
     top: auto;
-    bottom: 0;
+    bottom: 5%;
     left: 50%;
     right: auto;
-    margin-left: -10px;
-    transform: rotateZ(-90deg)
+    margin-left: -13.5px;
+    transform: rotateZ(270deg);
+    animation:buttonnext 1.5s infinite;
 }
-
+@keyframes buttonnext{
+    0%{
+        margin-top: 40%;
+        opacity: 0;
+    }
+    100%{
+        margin-bottom: 2%;
+        opacity: 1;
+    }
+}
 .s1, .s2 ,.s3,.s4,.s5,.s6,.s7{
     background: url("../img/bj.png");
     height: 100%
 }
 
-
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+}
+.footer p img {
+    position: absolute;
+    height: 70px;
+}
+.footer p img:nth-of-type(1) {
+    left: 0px
+}
+.footer p img:nth-of-type(2) {
+    left: -39px
+}
+.footer img {
+    height: 70px;
+    position: absolute;
+    left: -80px;
+}
+.footer img:nth-of-type(1){
+    animation: footerimg1 1s alternate infinite;
+}
+.footer img:nth-of-type(2){
+    animation: footerimg2 1s alternate infinite;
+}
+@keyframes footerimg1{
+    0%{
+        margin-right: 10px;
+    }
+    100%{
+        margin-left: 50px;
+    }
+}
+@keyframes footerimg2{
+    0%{
+        margin-left: 50px;
+    }
+    100%{
+        margin-right: 10px;
+    }
+}
 /**s1样式**/
 
 
@@ -166,19 +221,6 @@ ul{
     position: absolute
 }
 
-.s1 .footer p:nth-of-type(2) img {
-    position: absolute;
-    height: 70px;
-}
-
-.s1 .footer p:nth-of-type(2) img:nth-of-type(1) {
-    left: 0px
-}
-
-.s1 .footer p:nth-of-type(2) img:nth-of-type(2) {
-    left: -39px
-}
-
 
 /**s2样式**/
 
@@ -264,26 +306,6 @@ ul{
     line-height: 1.6rem;
     text-align: left
 }
-
-.s2 .footer {
-    position: absolute;
-    bottom: 0;
-    height: 70px;
-    width: 100%;
-}
-.s2 .footer p img {
-    position: absolute;
-    height: 70px;
-}
-
-.s2 .footer p img:nth-of-type(1) {
-    left: 0px
-}
-
-.s2 .footer p img:nth-of-type(2) {
-    left: -39px
-}
-
 /**s3样式**/
 
 .s3 {
@@ -333,6 +355,7 @@ ul{
     background: radial-gradient(rgba(16, 9, 9, 0.54), #045d6f); /* 标准的语法 */
     border-radius:50%;
     font-weight: bold;
+    animation: rubberBand infinite;
 }
 .s3 .main .big{
     width: 135px;
@@ -343,6 +366,7 @@ ul{
     background: radial-gradient(rgba(16, 9, 9, 0.54), #045d6f); /* 标准的语法 */
     border-radius:50%;
     font-weight: bold;
+    animation: bounceIn infinite;
 }
 .s3 .main p{
     position: absolute;
@@ -397,24 +421,7 @@ ul{
     height: 40px;
     float: left;
 }
-.s3 .footer {
-    position: absolute;
-    bottom: 0;
-    height: 70px;
-    width: 100%;
-}
-.s3 .footer p img {
-    position: absolute;
-    height: 70px;
-}
 
-.s3 .footer p img:nth-of-type(1) {
-    left: 0px
-}
-
-.s3 .footer p img:nth-of-type(2) {
-    left: -39px
-}
 
 /**s4样式**/
 
@@ -569,24 +576,6 @@ ul{
 .s4 .main .text .fifth p{
     font-size: 12px;
 }
-.s4 .footer {
-    position: absolute;
-    bottom: 0;
-    height: 70px;
-    width: 100%;
-}
-.s4 .footer p img {
-    position: absolute;
-    height: 70px;
-}
-
-.s4 .footer p img:nth-of-type(1) {
-    left: 0px
-}
-
-.s4 .footer p img:nth-of-type(2) {
-    left: -39px
-}
 
 
 /**s5样式**/
@@ -601,7 +590,7 @@ ul{
     animation: pulse infinite;
 }
 
-.s4 h2 ::before {
+.s5 h2 ::before {
     background: url("../img/14.png");
     background-size: cover;
     width: 80px;
@@ -631,9 +620,19 @@ ul{
 }
 .s5 .main .text{
     width: 40%;
+    height: 27%;
     background:url("../img/12.png");
     background-size: 100% 100%;
     position: absolute;
+    padding-top: 15px;
+    font-size: 15px;
+}
+.s5 .main .text .bg{
+    width: 95px;
+    background:url("../img/9.png");
+    color: #000;
+    background-size: 100% 100%;
+    margin: auto;
 }
 .s5 .main .text:nth-of-type(1){
     top: 150px;
@@ -645,35 +644,160 @@ ul{
 }
 
 .s5 .main .text:nth-of-type(3){
-    bottom: 165px;
+    bottom: 140px;
     left: 30px;
 }
 .s5 .main .text:nth-of-type(4){
-    bottom: 165px;
+    bottom: 140px;
     right: 30px;
 }
-.s5 .footer {
-    position: absolute;
-    bottom: 0;
-    height: 70px;
-    width: 100%;
-}
-.s5 .footer p img {
-    position: absolute;
-    height: 70px;
-}
-
-.s5 .footer p img:nth-of-type(1) {
-    left: 0px
-}
-
-.s5 .footer p img:nth-of-type(2) {
-    left: -39px
-}
-
 
 /**s6样式**/
 
 
+.s6 {
+    color: #06ebca
+}
+
+.s6 h2 {
+    padding-top: 30px;
+    margin-bottom: 25px;
+    animation: pulse infinite;
+}
+
+.s6 h2 ::before {
+    background: url("../img/14.png");
+    background-size: cover;
+    width: 80px;
+    height: 18px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    content: ""
+}
+
+.s6 h2 ::after {
+    background: url("../img/13.png");
+    background-size: cover;
+    width: 80px;
+    height: 18px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    content: ""
+}
+
+.s6 h2 small {
+    margin-top: 10px;
+    font-size: 14px;
+    display: block;
+    letter-spacing: 5px
+}
+.s6 .main{
+    text-align: left;
+}
+.s6 .main .plan{
+    padding-top: 30px;;
+}
+.s6 .main .plan img{
+    padding-left: 30px;
+    padding-top: 5px;
+    float: left;
+}
+.s6 .main .plan h4{
+    width: 75%;
+    height: 28px;
+    background:url("../img/21.png");
+    margin-left: 60px;
+    padding-left: 20px;
+    padding-top: 5px;
+    color: #000;
+}
+.s6 .main .btn1{
+    width: 285px;
+    height: 80px;
+    background: -webkit-radial-gradient(rgba(16, 9, 9, 0.54), #045d6f); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(rgba(16, 9, 9, 0.54), #045d6f); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(rgba(16, 9, 9, 0.54), #045d6f); /* Firefox 3.6 - 15 */
+    background: radial-gradient(rgba(16, 9, 9, 0.54), #045d6f); /* 标准的语法 */
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 58px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 7px;
+}
 /**s7样式**/
 
+.s7 {
+    color: #06ebca
+}
+
+.s7 h2 {
+    padding-top: 30px;
+    margin-bottom: 25px;
+    animation: pulse infinite;
+}
+
+.s7 h2 ::before {
+    background: url("../img/14.png");
+    background-size: cover;
+    width: 80px;
+    height: 18px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    content: ""
+}
+
+.s7 h2 ::after {
+    background: url("../img/13.png");
+    background-size: cover;
+    width: 80px;
+    height: 18px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    content: ""
+}
+
+.s7 h2 small {
+    margin-top: 10px;
+    font-size: 14px;
+    display: block;
+    letter-spacing: 5px
+}
+.s7 .main img {
+    width: 80%;
+}
+
+.s7 .main {
+    position: relative;
+}
+
+.s7 .main .text {
+    position: absolute;
+    padding: 5%;
+    top: 0px;
+    width: 80%;
+    left: 10%
+}
+.s7 .main .text input{
+    width: 235px;
+    height: 50px;
+    padding-left: 30px;
+    margin-top: 20px;
+    border: 1px #3db9ae solid;
+}
+.s7 .main .text button{
+    width: 235px;
+    height: 50px;
+    background: #00f2ca;
+    color: #fff;
+    border: 1px #3db9ae solid;
+    margin-top: 20px;
+}
+.s7 .main .text p{
+    font-size: 19px;
+    padding-top: 10px;
+}
