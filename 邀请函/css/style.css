@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+/**s1样式**/
+.s1{
+    background: #000;
+    width: 100%;
+    height: 100%;
+    border:5px #c69a05 solid;
+}
+.s1 .main img{
+    width: 90%;
+}
+.s1 .main h1{
+    color: #e3dd87;
+    font-family: 方正行楷简体;
+    font-size: 50px;
+    margin-top: 20px;
+}
+.s1 .main hr{
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+}
+.s1 .main p{
+    font-size: 15px;
+    color: #8a8074;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.s1 .main img:nth-of-type(1){
+    padding-top: 40px;
+}
+.s1 .main img:nth-of-type(2){
+    margin-top: 20px;
+}
+/**s2样式**/
+.s2{
+    background: url("../img/s2-1.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    color: #9c7a3b;
+    text-align: left;
+    border:5px #c69a05 solid;
+}
+.s2 .main{
+    padding-top: 200px;
+    padding-left: 70px;
+    padding-right: 70px;
+    line-height:1.2;
+    letter-spacing:1px;
+    font-family: 方正行楷简体;
+}
+.s2 .main p{
+    font-size: 17px;
+    padding-top: 10px;
+}
+/**s3样式**/
+.s3{
+    background: url("../img/s3-1.png");
+    background-size:100% 100%;
+    width: 100%;
+    height: 100%;
+    color: #9c7a3b;
+    border:5px #c69a05 solid;
+}
+.s3 .main{
+    background: #000;
+    width: 75%;
+    height: 80%;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    padding-top: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: left;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-family: 方正行楷简体;
+}
+.s3 .main p{
+    font-size: 17px;
+    padding-top: 15px;
+}
+/**s4样式**/
+.s4{
+    background: #000;
+    width: 100%;
+    height: 100%;
+    border:5px #c69a05 solid;
+}
+.s4 .main{
+    width: 80%;
+    height: 80%;
+}
+.s4 .main img{
+    position: absolute;
+    top: 150px;
+    right: 40px;
+}
+.s4 .main hr{
+    width: 70%;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.s4 .main .text{
+    padding-top: 75px;
+}
+.s4 .main h3{
+    color: #9c7a3b;
+    text-align: left;
+    padding-left: 65px;
+    padding-top: 90px;
+}
+.s4 .main .text input{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 60px;
+    padding-left: 30px;
+}
+.s4 .main .text .btn{
+    width: 85px;
+    height: 40px;
+    background:url("../img/s4-2.png");
+    color: #fff;
+}

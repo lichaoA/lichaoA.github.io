@@ -1,1 +1,0 @@
-document.querySelector("p").innerHTML = "放学等着别回家";
